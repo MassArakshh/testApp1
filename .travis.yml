@@ -3,7 +3,7 @@ dist: focal
 language: python
 
 python:
-  - 3.9
+  - 3.8
 
 install:
   - sudo apt -y install python3-distutils
@@ -24,10 +24,10 @@ install:
   - pip3 install --upgrade Cython==0.29.19 virtualenv
   - export PATH=$PATH:~/.local/bin/
   - ls -l
-  - echo "TODO"
   - yes | buildozer android debug
-  - ls -la
+  - ls -l
   - ls bin/ -l
+  - echo "TODO"
   - gem install dpl --pre
   - dpl releases --token $GITHUBTOKEN_041123 --file "bin/mobileapp001-0.1-armeabi-v7a-debug.apk" --tag_name "v.0.1"
- 
+  - echo "TODO2"
