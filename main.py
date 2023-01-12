@@ -1,12 +1,10 @@
-import asyncio
 import random
-from time import sleep
 
 from kivy.app import App
 from kivy.clock import Clock
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
-from kivy.uix.image import Image
+# from kivy.uix.image import Image
 from kivy.uix.textinput import TextInput
 
 red     = [1, 0, 0, 1]
@@ -19,7 +17,7 @@ pap1 = "Ну пап!!! Что далать?"
 pap2 = "А делать-то что?"
 pap3 = "Ну и...?"
 pap4 = "А точнее?"
-pap4 = "Ну пожалуйста!"
+pap5 = "Ну пожалуйста!"
 
 answers = ["поспи.", "поешь.", "надо подумать!", "а надо ли?", "тебе все по плечу!", "это все не то...", "а как надо?",
         "это тайна\nпокрытая макром!", "танцуй!", "включи Мозг!", "у мамы спроси.", "Плохо", "Думай", "Ага", "а как ты\nсама думаешь?"]
@@ -58,7 +56,7 @@ class AskBallApp(App):
         Clock.schedule_once(self.on_solution, 3)
     def on_solution(self, instance):
        # instance.text = "Жди..."
-       question = [pap1,pap2,pap3,pap4]
+       question = [pap1,pap2,pap3,pap4,pap5]
        colors = [red, green, blue, purple, gray]
 
 
