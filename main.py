@@ -25,22 +25,6 @@ answers = ["поспи.", "поешь.", "надо подумать!", "а на�
         "это тайна\nпокрытая макром!", "танцуй!", "включи Мозг!", "у мамы спроси.", "Плохо", "Думай", "Ага", "а как ты сама думаешь?"]
 
 
-class MainApp(App):
-    def build(self):
-        img = Image(source='sky.jpg',
-            size_hint=(1,5),
-            pos_hint = {'center_x':.5, 'center_y':.5})
-        return img
-
-
-class ButtontwoApp(App):
-    def build(self):
-        return Button()
-
-    def on_press_button(self):
-        print('Вы нажали кнопку!')
-
-
 class AskBallApp(App):
 
     def build(self):
